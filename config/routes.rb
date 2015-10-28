@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
-  root "welcome#index"
+  devise_for :users
+  root "welcome#test"
   resources :posts
   resources :announcements
+
+
+  get '/events' => 'events#index'
+  get '/donations' => 'donations#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

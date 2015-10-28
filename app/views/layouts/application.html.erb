@@ -6,9 +6,25 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+<p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+<div style= "background-color:lightgreen;height:200px;">
+  <h1 style= "font-size:60px;text-align: center;"> <%= link_to "Chabad of Marine Park", root_path() %> </h1>
+</div>
+<div style= "background-color:lightgrey;height:50px;text-align: center;font-size:20px;">
+  <span style= "background-color:lightblue;padding:5px;position:relative;top:10px;"><%= link_to "Anouncements", posts_path() %></span>
+  <span style= "background-color:lightblue;padding:5px;position:relative;top:10px;"><%= link_to "Donate", donations_path() %></span>
+  <span style= "background-color:lightblue;padding:5px;position:relative;top:10px;"><%= link_to "Events/Calander", events_path() %></span>
+</div>
 <body>
-
-<%= yield %>
-
+  <div class="center_content">
+    <%= yield %>
+  </div>
 </body>
+<br>
+<footer class="center_content" >
+  <hr class="flaired_edge">
+  <p style="position:relative;bottom: 1px;">If you would like to advertise on this site, please email me at whyenbe@gmail.com</p>
+</footer>
 </html>

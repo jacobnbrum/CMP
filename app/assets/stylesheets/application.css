@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+ .center_content {
+ display: table;
+ min-width: 800px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ hr.flaired_edge {
+     height: 30px;
+     border-style: solid;
+     border-color: lightgrey;
+     border-width: 1px 0 0 0;
+     border-radius: 20px;
+ }
+ hr.flaired_edge:before { /* Not really supposed to work, but does */
+     display: block;
+     content: "";
+     height: 30px;
+     margin-top: -31px;
+     border-style: solid;
+     border-color: lightgrey;
+     border-width: 0 0 1px 0;
+     border-radius: 20px;
+ }
+.button{
+width:500px;
+height:500px;
+background: blue;
+color:white;
+border-radius: 5px;
+
+}
+.button:hover{
+ background-image: url("//upload.wikimedia.org/wikipedia/en/thumb/2/2d/MagLiteFlashlight.jpg/225px-MagLiteFlashlight.jpg");
+
+}
