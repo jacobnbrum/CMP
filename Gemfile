@@ -20,7 +20,7 @@ gem 'jquery-rails'
 
 gem 'jquery-ui-rails'
 
-gem 'devise'
+ # gem 'devise'
 
 gem "twitter-bootstrap-rails"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

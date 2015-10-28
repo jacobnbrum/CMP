@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  root "welcome#test"
+
+  root "welcome#index"
   resources :posts
   resources :announcements
 
