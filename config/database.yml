@@ -23,16 +23,16 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: appname_development
+  database: cmp_development
   pool: 5
   timeout: 5000
   username: yaakov
-  password:
+  password: 
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: appname_test
+  database: cmp_test
   pool: 5
   timeout: 5000
   username: yaakov
